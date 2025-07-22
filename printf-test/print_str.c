@@ -5,9 +5,9 @@
  * print_str - function to print the next string arg in a list
  * @args: list of arguments passed into the parent print function
  *
- * Return: nothing
+ * Return: number of characters printed
  */
-void print_str(va_list args)
+int print_str(va_list args)
 {
 	int i = 0;
 	char *str;
@@ -18,4 +18,5 @@ void print_str(va_list args)
 		_putchar(str[i]);
 		i++;
 	}
+	return (i + 1);
 }

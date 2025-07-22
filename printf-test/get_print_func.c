@@ -8,7 +8,7 @@
  *
  * Return: pointer to the print function
  */
-void (*get_print_func(char type))(va_list)
+int (*get_print_func(char type))(va_list)
 {
         printer_t printers[] = {
                 {"c", print_char},

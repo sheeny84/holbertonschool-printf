@@ -10,8 +10,8 @@
  */
 int _printf(const char * const format, ...)
 {
-	int i = 0;
-	void (*f)(va_list);
+	int i = 0, count = 0;
+	int (*f)(va_list);
 	va_list args;
 
 	va_start(args, format);
@@ -22,6 +22,7 @@ int _printf(const char * const format, ...)
 		{
 			_putchar(format[i]);
 			i++;
+			count++;
 		}
 		else /* i.e. there is a conversion specifier */
 		{
@@ -31,10 +32,11 @@ int _printf(const char * const format, ...)
 			{
 				_putchar('%');
 				_putchar(format[i]);
+				count = count + 2;
 			}
 			else
 			{
-				f(args);
+				count += f(args);
 			}
 			i++;
 		}

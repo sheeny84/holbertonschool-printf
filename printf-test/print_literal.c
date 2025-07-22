@@ -5,10 +5,11 @@
  * print_literal - function to print a literal percentage symbol
  * @args: list of arguments passed into the parent print function
  *
- * Return: nothing
+ * Return: number of characters printed
  */
-void print_literal(va_list args)
+int print_literal(va_list args)
 {
 	(void)args;
 	_putchar('%');
+	return (1);
 }

@@ -12,14 +12,14 @@
 typedef struct printer
 {
 	char *type;
-	void (*f)(va_list args);
+	int (*f)(va_list args);
 } printer_t;
 
 int _putchar(char c);
-void print_char(va_list args);
-void print_str(va_list args);
-void print_literal(va_list args);
+int print_char(va_list args);
+int print_str(va_list args);
+int print_literal(va_list args);
 int _printf(const char *format, ...);
-void (*get_print_func(char type))(va_list);
+int (*get_print_func(char type))(va_list);
 
 #endif
