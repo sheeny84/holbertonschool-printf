@@ -13,22 +13,22 @@ int main(void)
 
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
-    _printf("Length:[%d, %i]\n", len, len);
+    printf("Length:[%d, %i]\n", len, len);
     printf("Length:[%d, %i]\n", len2, len2);
     
     len = _printf("Character:[%c]\n", 'H');
     len2 = printf("Character:[%c]\n", 'H');
-    _printf("Length:[%d, %i]\n", len, len);
+    printf("Length:[%d, %i]\n", len, len);
     printf("Length:[%d, %i]\n", len2, len2);
     
     len = _printf("String:[%s]\n", "I am a string !");
     len2 = printf("String:[%s]\n", "I am a string !");
-    _printf("Length:[%d, %i]\n", len, len);
+    printf("Length:[%d, %i]\n", len, len);
     printf("Length:[%d, %i]\n", len2, len2);
     
     len = _printf("Percent:[%%]\n");
     len2 = printf("Percent:[%%]\n");
-    _printf("Len:[%d]\n", len);
+    printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
     
     _printf("Unknown:[%r]\n");

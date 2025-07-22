@@ -18,7 +18,7 @@ int _printf(const char * const format, ...)
 	
 	while (format[i] != '\0')
 	{
-		if (format[i] != '%')
+		if (format[i] != '%') /* normal character */
 		{
 			_putchar(format[i]);
 			i++;
@@ -41,5 +41,6 @@ int _printf(const char * const format, ...)
 			i++;
 		}
 	}
-	return (0);
+	va_end(args);
+	return (count);
 }
