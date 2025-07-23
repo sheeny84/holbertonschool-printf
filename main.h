@@ -10,13 +10,13 @@ int (*get_print_func(char type))(va_list);
 
 /**
  * struct printer - format specifier to function mapping
- * @type: format specifier character (e.g. 'c', 's', 'd')
+ * @symbol: format specifier character (e.g. 'c', 's', 'd')
  * @f: pointer to function that handles the specifier
  */
 typedef struct printer
 {
-    char *symbol;
-    int (*f)(va_list args);
+	char *symbol;
+	int (*f)(va_list args);
 } printer_t;
 
 /* prototypes for printer functions */
