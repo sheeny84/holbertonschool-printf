@@ -19,13 +19,13 @@ int _printf(const char *format, ...)
 		return (-1); /* return error */
 
 	va_start(args, format);
-
 	while (format[i] != '\0')
 	{
-		/* if there is a conversion specifier */
-		if (format[i] == '%' && format[i + 1])
+		if (format[i] == '%') /* conversion specifier */
 		{
 			i++; /* move to specifier character */
+			if (format[i] == '\0') /* no next character */
+				return (count);
 			/* get print function for the conversion specifier */
 			f = get_print_func(format[i]);
 			if (f == NULL) /* no matching specifer found */
