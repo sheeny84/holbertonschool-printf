@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 		{
 			i++; /* move to specifier character */
 			if (format[i] == '\0') /* no next character */
-				return (count);
+				return (-1); /* error */
 			/* get print function for the conversion specifier */
 			f = get_print_func(format[i]);
 			if (f == NULL) /* no matching specifer found */
