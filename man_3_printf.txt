@@ -11,34 +11,34 @@
 .\" Use .Nm macro to designate other names for the documented program.
 .Nd function to mimic behaviour of standard printf() function in C
 .Sh SYNOPSIS             \" Section Header - required - don't modify
-.Fn "int _printf" "const char * format, ..."  
+.Fn "int _printf" "const char * format, ..."
 .Sh DESCRIPTION          \" Section Header - required - don't modify
-The 
-.Nm 
-function formats and prints data to standard output (stdout) according to the 
-specified format. The 
-.Ar format 
-specifier is a character string that contains conversion specifiers that 
+The
+.Nm
+function formats and prints data to standard output (stdout) according to the
+specified format. The
+.Ar format
+specifier is a character string that contains conversion specifiers that
 indicates how the arguments should be formatted and displayed.
 .sp 1
 .Ss Format of the format string
-.sp 1 
+.sp 1
 The format string is a character string composed of zero or more parts: ordinary
-characters (which are copied unchanged to the output stream); and conversion 
-specifications (which result in fetching subsequent arguments). Each conversion 
-specification is introduced by the character % and followed by a 
+characters (which are copied unchanged to the output stream); and conversion
+specifications (which result in fetching subsequent arguments). Each conversion
+specification is introduced by the character % and followed by a
 .Ar conversion specifier.
 .sp 1
-.Pp 
+.Pp
 The syntax is as follows:
 .Bl -tag -indent
-.It 
+.It
 .Ar %[conversion specifier]
 .El
 .Ss Conversion specifiers
 .sp 1
-The following are valid 
-.Ar conversion specifiers 
+The following are valid
+.Ar conversion specifiers
 and their types:
 .Bl -tag -width -indent
 .It c
@@ -51,12 +51,12 @@ integer
 literal percentage symbol
 .El
 .Sh RETURN VALUE
-The 
-.Nm 
-function returns the number of characters printed on success, and -1 in the case 
+The
+.Nm
+function returns the number of characters printed on success, and -1 in the case
 of an error.
 .Sh EXAMPLES
-The following are examples of how to use the 
+The following are examples of how to use the
 .Nm
 function.
 .Pp
