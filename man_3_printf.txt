@@ -59,51 +59,46 @@ of an error.
 The following are examples of how to use the
 .Nm
 function.
+.sp 1
 .Pp
-
 .Sy Example 1:
 .Ar no conversion specifier
-
+.Pp
 Command: _printf("This is a string.\\n");.
-
+.Pp
 Output: This is a string.
-
 .sp 1
 .Sy Example 2:
 .Ar character conversion specifier
-
+.Pp
 Command: _printf("Character:[%c]\\n", 'H');
-
+.Pp
 Output: Character:[H]
-
 .sp 1
 .Sy Example 3:
 .Ar string conversion specifier
-
+.Pp
 Command: _printf("String:[%s]\\n", 'I am a string !');
-
+.Pp
 Output: String:[I am a string !]
-
 .sp 1
 .Sy Example 4:
 .Ar percent conversion specifier
-
+.Pp
 Command: _printf("Percent:[%%]\\n");
-
+.Pp
 Output: Percent:[%]
-
 .sp 1
 .Sy Example 5:
 .Ar integer conversion specifier
-
+.Pp
 Command: _printf("Negative:[%i]\n", -762534);
-
+.Pp
 Output: Negative:[-762534]
-
 .sp 1
 .Sy Example 6:
 .Ar integer conversion specifier
-
+.Pp
 Command: _printf("Negative:[%d]\n", -762534);
-
+.Pp
 Output: Negative:[-762534]
