@@ -25,6 +25,6 @@ int print_str(va_list args);
 int print_percent(va_list args);
 int print_int(va_list args);
 int print_bin(va_list args);
-int print_bin_recursive(int n);
+int print_bin_recursive(unsigned int n);
 
 #endif

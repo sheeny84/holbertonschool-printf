@@ -8,11 +8,14 @@
 int print_bin(va_list args)
 {
 	int count = 0;
-	int dec;
+	unsigned int dec;
 
 	dec = va_arg(args, int);
 
-	count = print_bin_recursive(dec);
+	if (dec == 0)
+		count += _putchar('0');
+	else
+		count = print_bin_recursive(dec);
 
 	return (count);
 }
@@ -22,7 +25,7 @@ int print_bin(va_list args)
  * @n: number to print in binary
  * Return: number of characters printed
  */
-int print_bin_recursive(int n)
+int print_bin_recursive(unsigned int n)
 {
 	int count = 0;
 
