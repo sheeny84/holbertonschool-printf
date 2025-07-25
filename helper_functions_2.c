@@ -26,7 +26,7 @@ int print_bin_recursive(int n)
 {
 	int count = 0;
 
-	if (n > 0)
+	if (n != 0)
 	{
 		count += print_bin_recursive(n / 2);
 		count += _putchar((n % 2) + 48);
