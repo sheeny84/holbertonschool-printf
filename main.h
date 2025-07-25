@@ -24,5 +24,7 @@ int print_char(va_list args);
 int print_str(va_list args);
 int print_percent(va_list args);
 int print_int(va_list args);
+int print_bin(va_list args);
+int print_bin_recursive(int n);
 
 #endif
