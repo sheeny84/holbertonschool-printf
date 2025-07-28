@@ -4,6 +4,21 @@ This repository is for the purpose of the Holberton School's _printf group proje
 ## Description
 The _printf function formats and prints data to standard output(stdout) according to the specified format. The format specifier is a character string that contains conversion specifiers that indicates how the arguments should be formatted and displayed.
 
+## Supported Format Specifiers
+| Specifier | Description                      |
+|-----------|----------------------------------|
+| `%c`      | Character                        |
+| `%s`      | String                           |
+| `%%`      | Percent sign                     |
+| `%d`      | Signed decimal integer           |
+| `%i`      | Signed decimal integer (alias)   |
+
+## Compilation
+All the .c files will be compiled this way:
+```
+$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+
+```
 ## Flowchart
 ![Flowchart](flowchart.png)
 
@@ -39,4 +54,5 @@ Feel free to adjust any details or formatting to better suit your project and pr
 This project is licensed under the MIT License.
 
 ## Contributors
-<strong>sheeny84</strong> | <strong>by-emrii</strong> | <strong> carlaciar</strong>
+This project was completed by Holberton students from Cohort 27: <br>
+Sheeny Soulsby | Emily Chew | Carla Ciar
