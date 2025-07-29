@@ -102,3 +102,5 @@ Output: Negative:[-762534]
 Command: _printf("Negative:[%d]\n", -762534);
 .Pp
 Output: Negative:[-762534]
+.Sh AUTHORS
+Written by Sheeny Soulsby, Emily Chew, and Carla Ciar
